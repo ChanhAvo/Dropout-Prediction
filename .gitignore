@@ -10,7 +10,6 @@ catboost_info/
 
 # Raw Datasets
 data/
-*.csv
 
 # Generated analysis plots
 *.png
