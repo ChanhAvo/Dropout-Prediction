@@ -1,0 +1,30 @@
+{
+  "Gender": {
+    "Female": 0,
+    "Male": 1
+  },
+  "Admission": {
+    "Admission Evaluation": 0,
+    "Combined Transcript & National Exam Admission": 1,
+    "Direct Admission": 2,
+    "National High School Graduation Exam": 3,
+    "Priority Admission": 4,
+    "SAT": 5,
+    "Special Admission Consideration in 2021": 6,
+    "V - ACT": 7
+  },
+  "Region": {
+    "Central": 0,
+    "Highlands": 1,
+    "Mekong Delta": 2,
+    "North Central": 3,
+    "Northeast": 4,
+    "Red River Delta": 5,
+    "Southeast": 6
+  },
+  "HighSchoolType": {
+    "Gifted": 0,
+    "Private": 1,
+    "Public": 2
+  }
+}

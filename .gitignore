@@ -14,5 +14,3 @@ data/
 # Generated analysis plots
 *.png
 
-# Generated mapping and stats data
-*.json

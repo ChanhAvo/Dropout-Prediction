@@ -1,0 +1,1502 @@
+{
+    "Random Forest_M0_fold_0": {
+        "max_depth": 5,
+        "min_samples_split": 5,
+        "n_estimators": 100
+    },
+    "Random Forest_M1_fold_0": {
+        "max_depth": 6,
+        "min_samples_split": 2,
+        "n_estimators": 100
+    },
+    "Random Forest_M2_fold_0": {
+        "max_depth": 6,
+        "min_samples_split": 5,
+        "n_estimators": 50
+    },
+    "Random Forest_M3_fold_0": {
+        "max_depth": 6,
+        "min_samples_split": 10,
+        "n_estimators": 100
+    },
+    "Random Forest_M4_fold_0": {
+        "max_depth": 6,
+        "min_samples_split": 5,
+        "n_estimators": 100
+    },
+    "Random Forest_M0_fold_1": {
+        "max_depth": 5,
+        "min_samples_split": 5,
+        "n_estimators": 50
+    },
+    "Random Forest_M1_fold_1": {
+        "max_depth": 5,
+        "min_samples_split": 2,
+        "n_estimators": 100
+    },
+    "Random Forest_M2_fold_1": {
+        "max_depth": 6,
+        "min_samples_split": 2,
+        "n_estimators": 50
+    },
+    "Random Forest_M3_fold_1": {
+        "max_depth": 5,
+        "min_samples_split": 2,
+        "n_estimators": 100
+    },
+    "Random Forest_M4_fold_1": {
+        "max_depth": 6,
+        "min_samples_split": 2,
+        "n_estimators": 50
+    },
+    "Random Forest_M0_fold_2": {
+        "max_depth": 6,
+        "min_samples_split": 5,
+        "n_estimators": 100
+    },
+    "Random Forest_M1_fold_2": {
+        "max_depth": 6,
+        "min_samples_split": 2,
+        "n_estimators": 50
+    },
+    "Random Forest_M2_fold_2": {
+        "max_depth": 6,
+        "min_samples_split": 10,
+        "n_estimators": 50
+    },
+    "Random Forest_M3_fold_2": {
+        "max_depth": 6,
+        "min_samples_split": 2,
+        "n_estimators": 100
+    },
+    "Random Forest_M4_fold_2": {
+        "max_depth": 6,
+        "min_samples_split": 10,
+        "n_estimators": 100
+    },
+    "Random Forest_M0_fold_3": {
+        "max_depth": 6,
+        "min_samples_split": 5,
+        "n_estimators": 50
+    },
+    "Random Forest_M1_fold_3": {
+        "max_depth": 4,
+        "min_samples_split": 5,
+        "n_estimators": 100
+    },
+    "Random Forest_M2_fold_3": {
+        "max_depth": 6,
+        "min_samples_split": 2,
+        "n_estimators": 100
+    },
+    "Random Forest_M3_fold_3": {
+        "max_depth": 6,
+        "min_samples_split": 5,
+        "n_estimators": 100
+    },
+    "Random Forest_M4_fold_3": {
+        "max_depth": 6,
+        "min_samples_split": 10,
+        "n_estimators": 100
+    },
+    "Random Forest_M0_fold_4": {
+        "max_depth": 6,
+        "min_samples_split": 2,
+        "n_estimators": 100
+    },
+    "Random Forest_M1_fold_4": {
+        "max_depth": 6,
+        "min_samples_split": 5,
+        "n_estimators": 100
+    },
+    "Random Forest_M2_fold_4": {
+        "max_depth": 6,
+        "min_samples_split": 2,
+        "n_estimators": 50
+    },
+    "Random Forest_M3_fold_4": {
+        "max_depth": 6,
+        "min_samples_split": 2,
+        "n_estimators": 50
+    },
+    "Random Forest_M4_fold_4": {
+        "max_depth": 5,
+        "min_samples_split": 2,
+        "n_estimators": 100
+    },
+    "Random Forest_M0_fold_5": {
+        "max_depth": 5,
+        "min_samples_split": 2,
+        "n_estimators": 100
+    },
+    "Random Forest_M1_fold_5": {
+        "max_depth": 4,
+        "min_samples_split": 10,
+        "n_estimators": 100
+    },
+    "Random Forest_M2_fold_5": {
+        "max_depth": 5,
+        "min_samples_split": 10,
+        "n_estimators": 100
+    },
+    "Random Forest_M3_fold_5": {
+        "max_depth": 6,
+        "min_samples_split": 5,
+        "n_estimators": 100
+    },
+    "Random Forest_M4_fold_5": {
+        "max_depth": 6,
+        "min_samples_split": 2,
+        "n_estimators": 100
+    },
+    "Random Forest_M0_fold_6": {
+        "max_depth": 5,
+        "min_samples_split": 2,
+        "n_estimators": 100
+    },
+    "Random Forest_M1_fold_6": {
+        "max_depth": 5,
+        "min_samples_split": 5,
+        "n_estimators": 50
+    },
+    "Random Forest_M2_fold_6": {
+        "max_depth": 6,
+        "min_samples_split": 5,
+        "n_estimators": 50
+    },
+    "Random Forest_M3_fold_6": {
+        "max_depth": 6,
+        "min_samples_split": 10,
+        "n_estimators": 50
+    },
+    "Random Forest_M4_fold_6": {
+        "max_depth": 6,
+        "min_samples_split": 5,
+        "n_estimators": 100
+    },
+    "Random Forest_M0_fold_7": {
+        "max_depth": 6,
+        "min_samples_split": 10,
+        "n_estimators": 100
+    },
+    "Random Forest_M1_fold_7": {
+        "max_depth": 6,
+        "min_samples_split": 2,
+        "n_estimators": 100
+    },
+    "Random Forest_M2_fold_7": {
+        "max_depth": 6,
+        "min_samples_split": 2,
+        "n_estimators": 50
+    },
+    "Random Forest_M3_fold_7": {
+        "max_depth": 6,
+        "min_samples_split": 10,
+        "n_estimators": 100
+    },
+    "Random Forest_M4_fold_7": {
+        "max_depth": 6,
+        "min_samples_split": 2,
+        "n_estimators": 100
+    },
+    "Random Forest_M0_fold_8": {
+        "max_depth": 5,
+        "min_samples_split": 5,
+        "n_estimators": 50
+    },
+    "Random Forest_M1_fold_8": {
+        "max_depth": 6,
+        "min_samples_split": 5,
+        "n_estimators": 100
+    },
+    "Random Forest_M2_fold_8": {
+        "max_depth": 5,
+        "min_samples_split": 10,
+        "n_estimators": 100
+    },
+    "Random Forest_M3_fold_8": {
+        "max_depth": 6,
+        "min_samples_split": 2,
+        "n_estimators": 100
+    },
+    "Random Forest_M4_fold_8": {
+        "max_depth": 6,
+        "min_samples_split": 10,
+        "n_estimators": 100
+    },
+    "Random Forest_M0_fold_9": {
+        "max_depth": 5,
+        "min_samples_split": 2,
+        "n_estimators": 50
+    },
+    "Random Forest_M1_fold_9": {
+        "max_depth": 5,
+        "min_samples_split": 10,
+        "n_estimators": 100
+    },
+    "Random Forest_M2_fold_9": {
+        "max_depth": 6,
+        "min_samples_split": 10,
+        "n_estimators": 50
+    },
+    "Random Forest_M3_fold_9": {
+        "max_depth": 6,
+        "min_samples_split": 2,
+        "n_estimators": 100
+    },
+    "Random Forest_M4_fold_9": {
+        "max_depth": 6,
+        "min_samples_split": 5,
+        "n_estimators": 100
+    },
+    "Random Forest_M0_fold_10": {
+        "max_depth": 5,
+        "min_samples_split": 2,
+        "n_estimators": 100
+    },
+    "Random Forest_M1_fold_10": {
+        "max_depth": 6,
+        "min_samples_split": 10,
+        "n_estimators": 100
+    },
+    "Random Forest_M2_fold_10": {
+        "max_depth": 6,
+        "min_samples_split": 2,
+        "n_estimators": 100
+    },
+    "Random Forest_M3_fold_10": {
+        "max_depth": 5,
+        "min_samples_split": 2,
+        "n_estimators": 100
+    },
+    "Random Forest_M4_fold_10": {
+        "max_depth": 6,
+        "min_samples_split": 2,
+        "n_estimators": 100
+    },
+    "Random Forest_M0_fold_11": {
+        "max_depth": 6,
+        "min_samples_split": 5,
+        "n_estimators": 100
+    },
+    "Random Forest_M1_fold_11": {
+        "max_depth": 6,
+        "min_samples_split": 5,
+        "n_estimators": 100
+    },
+    "Random Forest_M2_fold_11": {
+        "max_depth": 6,
+        "min_samples_split": 5,
+        "n_estimators": 100
+    },
+    "Random Forest_M3_fold_11": {
+        "max_depth": 6,
+        "min_samples_split": 10,
+        "n_estimators": 50
+    },
+    "Random Forest_M4_fold_11": {
+        "max_depth": 6,
+        "min_samples_split": 10,
+        "n_estimators": 100
+    },
+    "Random Forest_M0_fold_12": {
+        "max_depth": 5,
+        "min_samples_split": 2,
+        "n_estimators": 100
+    },
+    "Random Forest_M1_fold_12": {
+        "max_depth": 6,
+        "min_samples_split": 5,
+        "n_estimators": 100
+    },
+    "Random Forest_M2_fold_12": {
+        "max_depth": 6,
+        "min_samples_split": 2,
+        "n_estimators": 50
+    },
+    "Random Forest_M3_fold_12": {
+        "max_depth": 6,
+        "min_samples_split": 5,
+        "n_estimators": 100
+    },
+    "Random Forest_M4_fold_12": {
+        "max_depth": 6,
+        "min_samples_split": 5,
+        "n_estimators": 50
+    },
+    "Random Forest_M0_fold_13": {
+        "max_depth": 5,
+        "min_samples_split": 5,
+        "n_estimators": 100
+    },
+    "Random Forest_M1_fold_13": {
+        "max_depth": 6,
+        "min_samples_split": 10,
+        "n_estimators": 100
+    },
+    "Random Forest_M2_fold_13": {
+        "max_depth": 6,
+        "min_samples_split": 5,
+        "n_estimators": 50
+    },
+    "Random Forest_M3_fold_13": {
+        "max_depth": 6,
+        "min_samples_split": 2,
+        "n_estimators": 100
+    },
+    "Random Forest_M4_fold_13": {
+        "max_depth": 6,
+        "min_samples_split": 2,
+        "n_estimators": 100
+    },
+    "Random Forest_M0_fold_14": {
+        "max_depth": 6,
+        "min_samples_split": 2,
+        "n_estimators": 100
+    },
+    "Random Forest_M1_fold_14": {
+        "max_depth": 6,
+        "min_samples_split": 5,
+        "n_estimators": 100
+    },
+    "Random Forest_M2_fold_14": {
+        "max_depth": 6,
+        "min_samples_split": 5,
+        "n_estimators": 100
+    },
+    "Random Forest_M3_fold_14": {
+        "max_depth": 6,
+        "min_samples_split": 2,
+        "n_estimators": 50
+    },
+    "Random Forest_M4_fold_14": {
+        "max_depth": 6,
+        "min_samples_split": 5,
+        "n_estimators": 100
+    },
+    "XGBoost_M0_fold_0": {
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "n_estimators": 100
+    },
+    "XGBoost_M1_fold_0": {
+        "learning_rate": 0.1,
+        "max_depth": 5,
+        "n_estimators": 100
+    },
+    "XGBoost_M2_fold_0": {
+        "learning_rate": 0.1,
+        "max_depth": 4,
+        "n_estimators": 100
+    },
+    "XGBoost_M3_fold_0": {
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "n_estimators": 50
+    },
+    "XGBoost_M4_fold_0": {
+        "learning_rate": 0.05,
+        "max_depth": 5,
+        "n_estimators": 100
+    },
+    "XGBoost_M0_fold_1": {
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "n_estimators": 50
+    },
+    "XGBoost_M1_fold_1": {
+        "learning_rate": 0.1,
+        "max_depth": 4,
+        "n_estimators": 50
+    },
+    "XGBoost_M2_fold_1": {
+        "learning_rate": 0.05,
+        "max_depth": 5,
+        "n_estimators": 100
+    },
+    "XGBoost_M3_fold_1": {
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "n_estimators": 100
+    },
+    "XGBoost_M4_fold_1": {
+        "learning_rate": 0.05,
+        "max_depth": 4,
+        "n_estimators": 100
+    },
+    "XGBoost_M0_fold_2": {
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "n_estimators": 100
+    },
+    "XGBoost_M1_fold_2": {
+        "learning_rate": 0.1,
+        "max_depth": 5,
+        "n_estimators": 100
+    },
+    "XGBoost_M2_fold_2": {
+        "learning_rate": 0.1,
+        "max_depth": 4,
+        "n_estimators": 100
+    },
+    "XGBoost_M3_fold_2": {
+        "learning_rate": 0.1,
+        "max_depth": 4,
+        "n_estimators": 100
+    },
+    "XGBoost_M4_fold_2": {
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "n_estimators": 100
+    },
+    "XGBoost_M0_fold_3": {
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "n_estimators": 100
+    },
+    "XGBoost_M1_fold_3": {
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "n_estimators": 50
+    },
+    "XGBoost_M2_fold_3": {
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "n_estimators": 100
+    },
+    "XGBoost_M3_fold_3": {
+        "learning_rate": 0.01,
+        "max_depth": 5,
+        "n_estimators": 100
+    },
+    "XGBoost_M4_fold_3": {
+        "learning_rate": 0.1,
+        "max_depth": 4,
+        "n_estimators": 50
+    },
+    "XGBoost_M0_fold_4": {
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "n_estimators": 100
+    },
+    "XGBoost_M1_fold_4": {
+        "learning_rate": 0.1,
+        "max_depth": 4,
+        "n_estimators": 100
+    },
+    "XGBoost_M2_fold_4": {
+        "learning_rate": 0.1,
+        "max_depth": 4,
+        "n_estimators": 100
+    },
+    "XGBoost_M3_fold_4": {
+        "learning_rate": 0.1,
+        "max_depth": 4,
+        "n_estimators": 50
+    },
+    "XGBoost_M4_fold_4": {
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "n_estimators": 50
+    },
+    "XGBoost_M0_fold_5": {
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "n_estimators": 100
+    },
+    "XGBoost_M1_fold_5": {
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "n_estimators": 50
+    },
+    "XGBoost_M2_fold_5": {
+        "learning_rate": 0.05,
+        "max_depth": 4,
+        "n_estimators": 100
+    },
+    "XGBoost_M3_fold_5": {
+        "learning_rate": 0.01,
+        "max_depth": 4,
+        "n_estimators": 100
+    },
+    "XGBoost_M4_fold_5": {
+        "learning_rate": 0.05,
+        "max_depth": 4,
+        "n_estimators": 50
+    },
+    "XGBoost_M0_fold_6": {
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "n_estimators": 100
+    },
+    "XGBoost_M1_fold_6": {
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "n_estimators": 100
+    },
+    "XGBoost_M2_fold_6": {
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "n_estimators": 50
+    },
+    "XGBoost_M3_fold_6": {
+        "learning_rate": 0.05,
+        "max_depth": 4,
+        "n_estimators": 100
+    },
+    "XGBoost_M4_fold_6": {
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "n_estimators": 100
+    },
+    "XGBoost_M0_fold_7": {
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "n_estimators": 100
+    },
+    "XGBoost_M1_fold_7": {
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "n_estimators": 100
+    },
+    "XGBoost_M2_fold_7": {
+        "learning_rate": 0.05,
+        "max_depth": 4,
+        "n_estimators": 100
+    },
+    "XGBoost_M3_fold_7": {
+        "learning_rate": 0.1,
+        "max_depth": 4,
+        "n_estimators": 50
+    },
+    "XGBoost_M4_fold_7": {
+        "learning_rate": 0.05,
+        "max_depth": 4,
+        "n_estimators": 100
+    },
+    "XGBoost_M0_fold_8": {
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "n_estimators": 100
+    },
+    "XGBoost_M1_fold_8": {
+        "learning_rate": 0.1,
+        "max_depth": 4,
+        "n_estimators": 100
+    },
+    "XGBoost_M2_fold_8": {
+        "learning_rate": 0.05,
+        "max_depth": 4,
+        "n_estimators": 100
+    },
+    "XGBoost_M3_fold_8": {
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "n_estimators": 100
+    },
+    "XGBoost_M4_fold_8": {
+        "learning_rate": 0.1,
+        "max_depth": 4,
+        "n_estimators": 50
+    },
+    "XGBoost_M0_fold_9": {
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "n_estimators": 100
+    },
+    "XGBoost_M1_fold_9": {
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "n_estimators": 50
+    },
+    "XGBoost_M2_fold_9": {
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "n_estimators": 50
+    },
+    "XGBoost_M3_fold_9": {
+        "learning_rate": 0.05,
+        "max_depth": 4,
+        "n_estimators": 50
+    },
+    "XGBoost_M4_fold_9": {
+        "learning_rate": 0.1,
+        "max_depth": 4,
+        "n_estimators": 50
+    },
+    "XGBoost_M0_fold_10": {
+        "learning_rate": 0.1,
+        "max_depth": 4,
+        "n_estimators": 100
+    },
+    "XGBoost_M1_fold_10": {
+        "learning_rate": 0.05,
+        "max_depth": 4,
+        "n_estimators": 100
+    },
+    "XGBoost_M2_fold_10": {
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "n_estimators": 100
+    },
+    "XGBoost_M3_fold_10": {
+        "learning_rate": 0.05,
+        "max_depth": 5,
+        "n_estimators": 100
+    },
+    "XGBoost_M4_fold_10": {
+        "learning_rate": 0.05,
+        "max_depth": 4,
+        "n_estimators": 50
+    },
+    "XGBoost_M0_fold_11": {
+        "learning_rate": 0.01,
+        "max_depth": 5,
+        "n_estimators": 100
+    },
+    "XGBoost_M1_fold_11": {
+        "learning_rate": 0.1,
+        "max_depth": 5,
+        "n_estimators": 50
+    },
+    "XGBoost_M2_fold_11": {
+        "learning_rate": 0.05,
+        "max_depth": 5,
+        "n_estimators": 100
+    },
+    "XGBoost_M3_fold_11": {
+        "learning_rate": 0.05,
+        "max_depth": 5,
+        "n_estimators": 100
+    },
+    "XGBoost_M4_fold_11": {
+        "learning_rate": 0.05,
+        "max_depth": 4,
+        "n_estimators": 100
+    },
+    "XGBoost_M0_fold_12": {
+        "learning_rate": 0.1,
+        "max_depth": 4,
+        "n_estimators": 50
+    },
+    "XGBoost_M1_fold_12": {
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "n_estimators": 100
+    },
+    "XGBoost_M2_fold_12": {
+        "learning_rate": 0.1,
+        "max_depth": 4,
+        "n_estimators": 100
+    },
+    "XGBoost_M3_fold_12": {
+        "learning_rate": 0.1,
+        "max_depth": 5,
+        "n_estimators": 50
+    },
+    "XGBoost_M4_fold_12": {
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "n_estimators": 50
+    },
+    "XGBoost_M0_fold_13": {
+        "learning_rate": 0.05,
+        "max_depth": 4,
+        "n_estimators": 100
+    },
+    "XGBoost_M1_fold_13": {
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "n_estimators": 100
+    },
+    "XGBoost_M2_fold_13": {
+        "learning_rate": 0.1,
+        "max_depth": 5,
+        "n_estimators": 50
+    },
+    "XGBoost_M3_fold_13": {
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "n_estimators": 100
+    },
+    "XGBoost_M4_fold_13": {
+        "learning_rate": 0.05,
+        "max_depth": 4,
+        "n_estimators": 100
+    },
+    "XGBoost_M0_fold_14": {
+        "learning_rate": 0.01,
+        "max_depth": 4,
+        "n_estimators": 100
+    },
+    "XGBoost_M1_fold_14": {
+        "learning_rate": 0.05,
+        "max_depth": 5,
+        "n_estimators": 100
+    },
+    "XGBoost_M2_fold_14": {
+        "learning_rate": 0.05,
+        "max_depth": 4,
+        "n_estimators": 50
+    },
+    "XGBoost_M3_fold_14": {
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "n_estimators": 50
+    },
+    "XGBoost_M4_fold_14": {
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "n_estimators": 50
+    },
+    "LightGBM_M0_fold_0": {
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "n_estimators": 50
+    },
+    "LightGBM_M1_fold_0": {
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "n_estimators": 100
+    },
+    "LightGBM_M2_fold_0": {
+        "learning_rate": 0.1,
+        "max_depth": 5,
+        "n_estimators": 100
+    },
+    "LightGBM_M3_fold_0": {
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "n_estimators": 100
+    },
+    "LightGBM_M4_fold_0": {
+        "learning_rate": 0.05,
+        "max_depth": 4,
+        "n_estimators": 100
+    },
+    "LightGBM_M0_fold_1": {
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "n_estimators": 50
+    },
+    "LightGBM_M1_fold_1": {
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "n_estimators": 100
+    },
+    "LightGBM_M2_fold_1": {
+        "learning_rate": 0.1,
+        "max_depth": 4,
+        "n_estimators": 50
+    },
+    "LightGBM_M3_fold_1": {
+        "learning_rate": 0.1,
+        "max_depth": 4,
+        "n_estimators": 50
+    },
+    "LightGBM_M4_fold_1": {
+        "learning_rate": 0.05,
+        "max_depth": 5,
+        "n_estimators": 100
+    },
+    "LightGBM_M0_fold_2": {
+        "learning_rate": 0.05,
+        "max_depth": 4,
+        "n_estimators": 100
+    },
+    "LightGBM_M1_fold_2": {
+        "learning_rate": 0.05,
+        "max_depth": 5,
+        "n_estimators": 100
+    },
+    "LightGBM_M2_fold_2": {
+        "learning_rate": 0.1,
+        "max_depth": 4,
+        "n_estimators": 100
+    },
+    "LightGBM_M3_fold_2": {
+        "learning_rate": 0.05,
+        "max_depth": 4,
+        "n_estimators": 100
+    },
+    "LightGBM_M4_fold_2": {
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "n_estimators": 50
+    },
+    "LightGBM_M0_fold_3": {
+        "learning_rate": 0.01,
+        "max_depth": 4,
+        "n_estimators": 50
+    },
+    "LightGBM_M1_fold_3": {
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "n_estimators": 50
+    },
+    "LightGBM_M2_fold_3": {
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "n_estimators": 100
+    },
+    "LightGBM_M3_fold_3": {
+        "learning_rate": 0.05,
+        "max_depth": 4,
+        "n_estimators": 100
+    },
+    "LightGBM_M4_fold_3": {
+        "learning_rate": 0.05,
+        "max_depth": 4,
+        "n_estimators": 100
+    },
+    "LightGBM_M0_fold_4": {
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "n_estimators": 100
+    },
+    "LightGBM_M1_fold_4": {
+        "learning_rate": 0.1,
+        "max_depth": 5,
+        "n_estimators": 100
+    },
+    "LightGBM_M2_fold_4": {
+        "learning_rate": 0.1,
+        "max_depth": 5,
+        "n_estimators": 50
+    },
+    "LightGBM_M3_fold_4": {
+        "learning_rate": 0.05,
+        "max_depth": 4,
+        "n_estimators": 100
+    },
+    "LightGBM_M4_fold_4": {
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "n_estimators": 100
+    },
+    "LightGBM_M0_fold_5": {
+        "learning_rate": 0.1,
+        "max_depth": 4,
+        "n_estimators": 50
+    },
+    "LightGBM_M1_fold_5": {
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "n_estimators": 50
+    },
+    "LightGBM_M2_fold_5": {
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "n_estimators": 100
+    },
+    "LightGBM_M3_fold_5": {
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "n_estimators": 50
+    },
+    "LightGBM_M4_fold_5": {
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "n_estimators": 50
+    },
+    "LightGBM_M0_fold_6": {
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "n_estimators": 50
+    },
+    "LightGBM_M1_fold_6": {
+        "learning_rate": 0.1,
+        "max_depth": 5,
+        "n_estimators": 50
+    },
+    "LightGBM_M2_fold_6": {
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "n_estimators": 50
+    },
+    "LightGBM_M3_fold_6": {
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "n_estimators": 100
+    },
+    "LightGBM_M4_fold_6": {
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "n_estimators": 100
+    },
+    "LightGBM_M0_fold_7": {
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "n_estimators": 100
+    },
+    "LightGBM_M1_fold_7": {
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "n_estimators": 50
+    },
+    "LightGBM_M2_fold_7": {
+        "learning_rate": 0.1,
+        "max_depth": 4,
+        "n_estimators": 100
+    },
+    "LightGBM_M3_fold_7": {
+        "learning_rate": 0.05,
+        "max_depth": 5,
+        "n_estimators": 50
+    },
+    "LightGBM_M4_fold_7": {
+        "learning_rate": 0.05,
+        "max_depth": 4,
+        "n_estimators": 100
+    },
+    "LightGBM_M0_fold_8": {
+        "learning_rate": 0.01,
+        "max_depth": 5,
+        "n_estimators": 100
+    },
+    "LightGBM_M1_fold_8": {
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "n_estimators": 100
+    },
+    "LightGBM_M2_fold_8": {
+        "learning_rate": 0.1,
+        "max_depth": 5,
+        "n_estimators": 50
+    },
+    "LightGBM_M3_fold_8": {
+        "learning_rate": 0.05,
+        "max_depth": 4,
+        "n_estimators": 100
+    },
+    "LightGBM_M4_fold_8": {
+        "learning_rate": 0.1,
+        "max_depth": 4,
+        "n_estimators": 50
+    },
+    "LightGBM_M0_fold_9": {
+        "learning_rate": 0.01,
+        "max_depth": 3,
+        "n_estimators": 100
+    },
+    "LightGBM_M1_fold_9": {
+        "learning_rate": 0.1,
+        "max_depth": 4,
+        "n_estimators": 100
+    },
+    "LightGBM_M2_fold_9": {
+        "learning_rate": 0.05,
+        "max_depth": 4,
+        "n_estimators": 100
+    },
+    "LightGBM_M3_fold_9": {
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "n_estimators": 50
+    },
+    "LightGBM_M4_fold_9": {
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "n_estimators": 100
+    },
+    "LightGBM_M0_fold_10": {
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "n_estimators": 50
+    },
+    "LightGBM_M1_fold_10": {
+        "learning_rate": 0.1,
+        "max_depth": 4,
+        "n_estimators": 50
+    },
+    "LightGBM_M2_fold_10": {
+        "learning_rate": 0.05,
+        "max_depth": 4,
+        "n_estimators": 100
+    },
+    "LightGBM_M3_fold_10": {
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "n_estimators": 100
+    },
+    "LightGBM_M4_fold_10": {
+        "learning_rate": 0.1,
+        "max_depth": 5,
+        "n_estimators": 50
+    },
+    "LightGBM_M0_fold_11": {
+        "learning_rate": 0.01,
+        "max_depth": 5,
+        "n_estimators": 50
+    },
+    "LightGBM_M1_fold_11": {
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "n_estimators": 100
+    },
+    "LightGBM_M2_fold_11": {
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "n_estimators": 100
+    },
+    "LightGBM_M3_fold_11": {
+        "learning_rate": 0.1,
+        "max_depth": 5,
+        "n_estimators": 100
+    },
+    "LightGBM_M4_fold_11": {
+        "learning_rate": 0.1,
+        "max_depth": 4,
+        "n_estimators": 50
+    },
+    "LightGBM_M0_fold_12": {
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "n_estimators": 100
+    },
+    "LightGBM_M1_fold_12": {
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "n_estimators": 100
+    },
+    "LightGBM_M2_fold_12": {
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "n_estimators": 100
+    },
+    "LightGBM_M3_fold_12": {
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "n_estimators": 100
+    },
+    "LightGBM_M4_fold_12": {
+        "learning_rate": 0.1,
+        "max_depth": 4,
+        "n_estimators": 50
+    },
+    "LightGBM_M0_fold_13": {
+        "learning_rate": 0.1,
+        "max_depth": 4,
+        "n_estimators": 50
+    },
+    "LightGBM_M1_fold_13": {
+        "learning_rate": 0.1,
+        "max_depth": 5,
+        "n_estimators": 50
+    },
+    "LightGBM_M2_fold_13": {
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "n_estimators": 100
+    },
+    "LightGBM_M3_fold_13": {
+        "learning_rate": 0.1,
+        "max_depth": 4,
+        "n_estimators": 50
+    },
+    "LightGBM_M4_fold_13": {
+        "learning_rate": 0.1,
+        "max_depth": 4,
+        "n_estimators": 50
+    },
+    "LightGBM_M0_fold_14": {
+        "learning_rate": 0.01,
+        "max_depth": 4,
+        "n_estimators": 100
+    },
+    "LightGBM_M1_fold_14": {
+        "learning_rate": 0.1,
+        "max_depth": 4,
+        "n_estimators": 50
+    },
+    "LightGBM_M2_fold_14": {
+        "learning_rate": 0.1,
+        "max_depth": 4,
+        "n_estimators": 50
+    },
+    "LightGBM_M3_fold_14": {
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "n_estimators": 100
+    },
+    "LightGBM_M4_fold_14": {
+        "learning_rate": 0.05,
+        "max_depth": 4,
+        "n_estimators": 50
+    },
+    "CatBoost_M0_fold_0": {
+        "depth": 5,
+        "iterations": 100,
+        "learning_rate": 0.1
+    },
+    "CatBoost_M1_fold_0": {
+        "depth": 4,
+        "iterations": 100,
+        "learning_rate": 0.05
+    },
+    "CatBoost_M2_fold_0": {
+        "depth": 4,
+        "iterations": 100,
+        "learning_rate": 0.1
+    },
+    "CatBoost_M3_fold_0": {
+        "depth": 3,
+        "iterations": 50,
+        "learning_rate": 0.05
+    },
+    "CatBoost_M4_fold_0": {
+        "depth": 3,
+        "iterations": 100,
+        "learning_rate": 0.1
+    },
+    "CatBoost_M0_fold_1": {
+        "depth": 5,
+        "iterations": 100,
+        "learning_rate": 0.1
+    },
+    "CatBoost_M1_fold_1": {
+        "depth": 5,
+        "iterations": 100,
+        "learning_rate": 0.05
+    },
+    "CatBoost_M2_fold_1": {
+        "depth": 5,
+        "iterations": 100,
+        "learning_rate": 0.1
+    },
+    "CatBoost_M3_fold_1": {
+        "depth": 3,
+        "iterations": 100,
+        "learning_rate": 0.1
+    },
+    "CatBoost_M4_fold_1": {
+        "depth": 3,
+        "iterations": 100,
+        "learning_rate": 0.1
+    },
+    "CatBoost_M0_fold_2": {
+        "depth": 4,
+        "iterations": 100,
+        "learning_rate": 0.1
+    },
+    "CatBoost_M1_fold_2": {
+        "depth": 4,
+        "iterations": 100,
+        "learning_rate": 0.1
+    },
+    "CatBoost_M2_fold_2": {
+        "depth": 3,
+        "iterations": 100,
+        "learning_rate": 0.1
+    },
+    "CatBoost_M3_fold_2": {
+        "depth": 3,
+        "iterations": 100,
+        "learning_rate": 0.1
+    },
+    "CatBoost_M4_fold_2": {
+        "depth": 3,
+        "iterations": 100,
+        "learning_rate": 0.05
+    },
+    "CatBoost_M0_fold_3": {
+        "depth": 4,
+        "iterations": 100,
+        "learning_rate": 0.1
+    },
+    "CatBoost_M1_fold_3": {
+        "depth": 3,
+        "iterations": 100,
+        "learning_rate": 0.1
+    },
+    "CatBoost_M2_fold_3": {
+        "depth": 5,
+        "iterations": 100,
+        "learning_rate": 0.1
+    },
+    "CatBoost_M3_fold_3": {
+        "depth": 5,
+        "iterations": 100,
+        "learning_rate": 0.05
+    },
+    "CatBoost_M4_fold_3": {
+        "depth": 4,
+        "iterations": 100,
+        "learning_rate": 0.1
+    },
+    "CatBoost_M0_fold_4": {
+        "depth": 3,
+        "iterations": 100,
+        "learning_rate": 0.05
+    },
+    "CatBoost_M1_fold_4": {
+        "depth": 5,
+        "iterations": 100,
+        "learning_rate": 0.05
+    },
+    "CatBoost_M2_fold_4": {
+        "depth": 5,
+        "iterations": 100,
+        "learning_rate": 0.1
+    },
+    "CatBoost_M3_fold_4": {
+        "depth": 3,
+        "iterations": 50,
+        "learning_rate": 0.1
+    },
+    "CatBoost_M4_fold_4": {
+        "depth": 3,
+        "iterations": 100,
+        "learning_rate": 0.1
+    },
+    "CatBoost_M0_fold_5": {
+        "depth": 3,
+        "iterations": 50,
+        "learning_rate": 0.1
+    },
+    "CatBoost_M1_fold_5": {
+        "depth": 5,
+        "iterations": 50,
+        "learning_rate": 0.05
+    },
+    "CatBoost_M2_fold_5": {
+        "depth": 3,
+        "iterations": 50,
+        "learning_rate": 0.1
+    },
+    "CatBoost_M3_fold_5": {
+        "depth": 3,
+        "iterations": 100,
+        "learning_rate": 0.1
+    },
+    "CatBoost_M4_fold_5": {
+        "depth": 5,
+        "iterations": 100,
+        "learning_rate": 0.05
+    },
+    "CatBoost_M0_fold_6": {
+        "depth": 3,
+        "iterations": 100,
+        "learning_rate": 0.1
+    },
+    "CatBoost_M1_fold_6": {
+        "depth": 4,
+        "iterations": 100,
+        "learning_rate": 0.1
+    },
+    "CatBoost_M2_fold_6": {
+        "depth": 3,
+        "iterations": 100,
+        "learning_rate": 0.05
+    },
+    "CatBoost_M3_fold_6": {
+        "depth": 5,
+        "iterations": 50,
+        "learning_rate": 0.1
+    },
+    "CatBoost_M4_fold_6": {
+        "depth": 5,
+        "iterations": 100,
+        "learning_rate": 0.1
+    },
+    "CatBoost_M0_fold_7": {
+        "depth": 4,
+        "iterations": 50,
+        "learning_rate": 0.1
+    },
+    "CatBoost_M1_fold_7": {
+        "depth": 3,
+        "iterations": 100,
+        "learning_rate": 0.05
+    },
+    "CatBoost_M2_fold_7": {
+        "depth": 3,
+        "iterations": 100,
+        "learning_rate": 0.1
+    },
+    "CatBoost_M3_fold_7": {
+        "depth": 4,
+        "iterations": 100,
+        "learning_rate": 0.1
+    },
+    "CatBoost_M4_fold_7": {
+        "depth": 4,
+        "iterations": 100,
+        "learning_rate": 0.05
+    },
+    "CatBoost_M0_fold_8": {
+        "depth": 3,
+        "iterations": 100,
+        "learning_rate": 0.1
+    },
+    "CatBoost_M1_fold_8": {
+        "depth": 3,
+        "iterations": 50,
+        "learning_rate": 0.1
+    },
+    "CatBoost_M2_fold_8": {
+        "depth": 5,
+        "iterations": 100,
+        "learning_rate": 0.1
+    },
+    "CatBoost_M3_fold_8": {
+        "depth": 3,
+        "iterations": 100,
+        "learning_rate": 0.1
+    },
+    "CatBoost_M4_fold_8": {
+        "depth": 3,
+        "iterations": 100,
+        "learning_rate": 0.1
+    },
+    "CatBoost_M0_fold_9": {
+        "depth": 5,
+        "iterations": 100,
+        "learning_rate": 0.1
+    },
+    "CatBoost_M1_fold_9": {
+        "depth": 3,
+        "iterations": 100,
+        "learning_rate": 0.1
+    },
+    "CatBoost_M2_fold_9": {
+        "depth": 5,
+        "iterations": 100,
+        "learning_rate": 0.1
+    },
+    "CatBoost_M3_fold_9": {
+        "depth": 4,
+        "iterations": 50,
+        "learning_rate": 0.1
+    },
+    "CatBoost_M4_fold_9": {
+        "depth": 5,
+        "iterations": 50,
+        "learning_rate": 0.05
+    },
+    "CatBoost_M0_fold_10": {
+        "depth": 3,
+        "iterations": 100,
+        "learning_rate": 0.1
+    },
+    "CatBoost_M1_fold_10": {
+        "depth": 5,
+        "iterations": 100,
+        "learning_rate": 0.1
+    },
+    "CatBoost_M2_fold_10": {
+        "depth": 3,
+        "iterations": 50,
+        "learning_rate": 0.1
+    },
+    "CatBoost_M3_fold_10": {
+        "depth": 3,
+        "iterations": 100,
+        "learning_rate": 0.05
+    },
+    "CatBoost_M4_fold_10": {
+        "depth": 4,
+        "iterations": 100,
+        "learning_rate": 0.05
+    },
+    "CatBoost_M0_fold_11": {
+        "depth": 3,
+        "iterations": 100,
+        "learning_rate": 0.1
+    },
+    "CatBoost_M1_fold_11": {
+        "depth": 5,
+        "iterations": 100,
+        "learning_rate": 0.1
+    },
+    "CatBoost_M2_fold_11": {
+        "depth": 4,
+        "iterations": 100,
+        "learning_rate": 0.1
+    },
+    "CatBoost_M3_fold_11": {
+        "depth": 4,
+        "iterations": 100,
+        "learning_rate": 0.1
+    },
+    "CatBoost_M4_fold_11": {
+        "depth": 4,
+        "iterations": 100,
+        "learning_rate": 0.1
+    },
+    "CatBoost_M0_fold_12": {
+        "depth": 4,
+        "iterations": 100,
+        "learning_rate": 0.1
+    },
+    "CatBoost_M1_fold_12": {
+        "depth": 4,
+        "iterations": 50,
+        "learning_rate": 0.1
+    },
+    "CatBoost_M2_fold_12": {
+        "depth": 4,
+        "iterations": 100,
+        "learning_rate": 0.05
+    },
+    "CatBoost_M3_fold_12": {
+        "depth": 4,
+        "iterations": 100,
+        "learning_rate": 0.1
+    },
+    "CatBoost_M4_fold_12": {
+        "depth": 5,
+        "iterations": 100,
+        "learning_rate": 0.1
+    },
+    "CatBoost_M0_fold_13": {
+        "depth": 3,
+        "iterations": 100,
+        "learning_rate": 0.1
+    },
+    "CatBoost_M1_fold_13": {
+        "depth": 4,
+        "iterations": 100,
+        "learning_rate": 0.1
+    },
+    "CatBoost_M2_fold_13": {
+        "depth": 4,
+        "iterations": 100,
+        "learning_rate": 0.1
+    },
+    "CatBoost_M3_fold_13": {
+        "depth": 5,
+        "iterations": 100,
+        "learning_rate": 0.05
+    },
+    "CatBoost_M4_fold_13": {
+        "depth": 3,
+        "iterations": 100,
+        "learning_rate": 0.1
+    },
+    "CatBoost_M0_fold_14": {
+        "depth": 5,
+        "iterations": 100,
+        "learning_rate": 0.05
+    },
+    "CatBoost_M1_fold_14": {
+        "depth": 5,
+        "iterations": 100,
+        "learning_rate": 0.1
+    },
+    "CatBoost_M2_fold_14": {
+        "depth": 3,
+        "iterations": 100,
+        "learning_rate": 0.05
+    },
+    "CatBoost_M3_fold_14": {
+        "depth": 5,
+        "iterations": 100,
+        "learning_rate": 0.05
+    },
+    "CatBoost_M4_fold_14": {
+        "depth": 5,
+        "iterations": 100,
+        "learning_rate": 0.05
+    }
+}
