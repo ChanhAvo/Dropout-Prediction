@@ -15,8 +15,5 @@ data/
 # Generated analysis plots
 *.png
 
-# CatBoost saved models
-*.cbm
-
 # Generated mapping and stats data
 *.json
