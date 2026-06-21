@@ -1,0 +1,22 @@
+# Python Virtual Environment
+.venv/
+
+# Compiled Python bytecode
+__pycache__/
+*.pyc
+
+# CatBoost training logs & scratchpads
+catboost_info/
+
+# Raw Datasets
+data/
+*.csv
+
+# Generated analysis plots
+*.png
+
+# CatBoost saved models
+*.cbm
+
+# Generated mapping and stats data
+*.json
