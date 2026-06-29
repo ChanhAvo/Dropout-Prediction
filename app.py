@@ -185,32 +185,21 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-# ──────────────────────────────────────────────────────────
-# ASSET LOADING (cached)
-# ──────────────────────────────────────────────────────────
 @st.cache_resource(show_spinner="Loading model …")
 def load_assets():
     model = CatBoostClassifier()
-    model.load_model("catboost_m4_model.cbm")
+    model.load_model("artifacts/catboost_m4_model.cbm")
 
-    context_db   = pd.read_csv("major_context_db.csv")
-    encoder_maps = json.load(open("encoder_maps.json"))
-    m4_feat_cols = json.load(open("m4_feature_cols.json"))
-    adm_stats    = json.load(open("admission_score_stats.json"))
+    context_db   = pd.read_csv("artifacts/major_context_db.csv")
+    encoder_maps = json.load(open("artifacts/encoder_maps.json"))
+    m4_feat_cols = json.load(open("artifacts/m4_feature_cols.json"))
+    adm_stats    = json.load(open("artifacts/admission_score_stats.json"))
 
     return model, context_db, encoder_maps, m4_feat_cols, adm_stats
 
 
 model, context_db, encoder_maps, M4_FEATURE_COLS, admission_score_stats = load_assets()
 
-# ──────────────────────────────────────────────────────────
-# CONSTANTS
-# ──────────────────────────────────────────────────────────
-# Each admission method carries its empirical score range from the training data.
-# min_val / max_val → clamp the number_input widget bounds
-# default      → sensible starting value (≈ median)
-# step         → widget increment resolution
-# label_suffix → shown next to the field label so the user knows the expected scale
 ADMISSION_SCORE_CONFIG: dict[str, dict] = {
     "National High School Graduation Exam": {
         "min_val": 0.0,   "max_val": 30.0,   "default": 24.0,  "step": 0.01,
@@ -233,17 +222,14 @@ ADMISSION_SCORE_CONFIG: dict[str, dict] = {
         "label_suffix": "(0 – 30)",
     },
     "Admission Evaluation": {
-        # Percentage-style score, roughly 62 – 97
         "min_val": 0.0,   "max_val": 100.0,  "default": 87.0,  "step": 0.01,
         "label_suffix": "(0 – 100, percentage)",
     },
     "SAT": {
-        # Standard SAT range
         "min_val": 400.0, "max_val": 1600.0, "default": 1000.0, "step": 10.0,
         "label_suffix": "(400 – 1600)",
     },
     "V - ACT": {
-        # Vietnamese ACT-equivalent: empirical range 607 – 1041
         "min_val": 400.0, "max_val": 1200.0, "default": 800.0,  "step": 1.0,
         "label_suffix": "(400 – 1200)",
     },
@@ -296,9 +282,8 @@ def clean(name: str) -> str:
     return CLEAN_NAMES.get(name, name.replace("_", " ").title())
 
 
-# ──────────────────────────────────────────────────────────
-# FEATURE CONSTRUCTION
-# ──────────────────────────────────────────────────────────
+# Feature
+
 def standardise_score(raw_score: float, admission: str) -> float:
     """Standardise entrance exam score per admission channel (using train stats)."""
     stats = admission_score_stats.get(admission, admission_score_stats["__global__"])
@@ -312,7 +297,7 @@ def build_m4_vector(
 ) -> pd.DataFrame:
     """Assemble the full M4 feature vector in the exact column order the model expects."""
 
-    # ── Encode categoricals via saved OrdinalEncoder maps ────────
+    #  Encode categoricals 
     gender_enc   = encoder_maps["Gender"].get(gender, -1)
     admission_enc = encoder_maps["Admission"].get(admission, -1)
     region_enc   = encoder_maps["Region"].get(region, -1)
@@ -321,13 +306,13 @@ def build_m4_vector(
 
     entrance_std = standardise_score(entrance_raw, admission)
 
-    # ── Major context lookup ──────────────────────────────────────
+    # Major context lookup
     row = context_db[context_db["Major"] == major].iloc[0].to_dict()
 
     mean_s   = row["mean_score_std"]
     std_s    = row["std_score_std"] if row["std_score_std"] != 0 else 1.0
 
-    # ── Build base dict (entrance_cols order) ─────────────────────
+    # Build base dict 
     feat = {
         "Gender":           gender_enc,
         "Admission":        admission_enc,
@@ -378,24 +363,20 @@ def build_m4_vector(
     return df_out
 
 
-# ──────────────────────────────────────────────────────────
-# SHAP FACTOR ANALYSIS
-# ──────────────────────────────────────────────────────────
+# Shap 
 @st.cache_resource(show_spinner="Preparing explainer …")
 def get_explainer():
     return shap.TreeExplainer(model)
 
 
 def compute_factor_table(input_df: pd.DataFrame, top_n: int = TOP_N_FACTORS):
-    """Returns a DataFrame of top factors sorted by |SHAP|, with % contribution."""
     explainer   = get_explainer()
     shap_vals   = explainer.shap_values(input_df)
 
-    # For CatBoost binary, shap_values is either (1, n_features) or list[array]
     if isinstance(shap_vals, list):
         shap_vals = shap_vals[1]
 
-    sv = shap_vals.flatten()           # shape (n_features,)
+    sv = shap_vals.flatten()           
     total_abs = np.abs(sv).sum()
 
     records = []
@@ -419,15 +400,11 @@ def compute_factor_table(input_df: pd.DataFrame, top_n: int = TOP_N_FACTORS):
     return df_factors
 
 
-# ──────────────────────────────────────────────────────────
-# RESULT RENDERING
-# ──────────────────────────────────────────────────────────
+# Result rendering 
 def render_gauge(prob_dropout: float):
     prob_grad = 1.0 - prob_dropout
     pct_d = f"{prob_dropout * 100:.1f}%"
     pct_g = f"{prob_grad    * 100:.1f}%"
-
-    # Verdict band
     if prob_dropout < 0.35:
         verdict_cls  = "safe"
         verdict_text = "🟢 Low Risk — Student shows a strong graduation profile."
@@ -505,7 +482,6 @@ def render_factor_table(df_factors: pd.DataFrame):
 
 
 def render_factor_chart(df_factors: pd.DataFrame):
-    """Horizontal bar chart — red bars increase dropout risk, green reduce it."""
     fig, ax = plt.subplots(figsize=(7, max(3, len(df_factors) * 0.6)))
 
     colors = ["#ef4444" if p else "#10b981" for p in df_factors["positive"]]
@@ -533,9 +509,7 @@ def render_factor_chart(df_factors: pd.DataFrame):
     plt.close(fig)
 
 
-# ──────────────────────────────────────────────────────────
-# PAGE LAYOUT
-# ──────────────────────────────────────────────────────────
+# Layout
 st.markdown(
     """
     <div class="hero">
@@ -547,8 +521,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-# ── Major & Admission are OUTSIDE the form so selecting them immediately ────
-# ── re-renders the score input with the correct bounds & default. ────────────
+
 st.markdown('<div class="section-title">Student Information</div>', unsafe_allow_html=True)
 
 pre_c1, pre_c2 = st.columns(2)
@@ -557,7 +530,6 @@ with pre_c1:
 with pre_c2:
     admission = st.selectbox("Admission Channel", ADMISSION_OPTIONS)
 
-# Resolve score config reactively every time admission changes
 score_cfg = ADMISSION_SCORE_CONFIG[admission]
 
 st.caption(
@@ -566,10 +538,7 @@ st.caption(
     f"{score_cfg['label_suffix']}"
 )
 
-# ── Everything else is inside the form ──────────────────────────────────────
 with st.form("prediction_form"):
-
-    # Score widget: bounds, default and step driven by admission choice above
     entrance_raw = st.number_input(
         f"Entrance Exam Score {score_cfg['label_suffix']}",
         min_value=score_cfg["min_val"],
@@ -610,9 +579,9 @@ with st.form("prediction_form"):
 
     submitted = st.form_submit_button("Predict Dropout Risk →", type="primary")
 
-# ──────────────────────────────────────────────────────────
-# PREDICTION & RESULTS
-# ──────────────────────────────────────────────────────────
+
+# Prediction & Result
+
 if submitted:
     with st.spinner("Running M4 model …"):
         input_df     = build_m4_vector(
@@ -625,14 +594,14 @@ if submitted:
 
     st.markdown("---")
 
-    # ── Outcome probability display ──────────────────────────────
+    # Outcome probability 
     st.subheader("Predicted Outcome")
     render_gauge(prob_dropout)
     render_probability_bar(prob_dropout)
 
     st.markdown("---")
 
-    # ── Factor analysis ──────────────────────────────────────────
+    # Factor analysis
     st.subheader(f"Top {TOP_N_FACTORS} Contributing Factors")
     st.caption(
         "Percentage = share of total model output attributed to each factor. "
@@ -645,7 +614,6 @@ if submitted:
     with col_chart:
         render_factor_chart(df_factors)
 
-    # ── Major context info panel ─────────────────────────────────
     with st.expander("ℹ️  Major curriculum & cohort context used in prediction"):
         ctx = context_db[context_db["Major"] == major].iloc[0]
         c1, c2, c3 = st.columns(3)

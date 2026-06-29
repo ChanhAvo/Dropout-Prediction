@@ -15,57 +15,55 @@ from config import target_col, entrance_cols, CAT_FEATURE_INDICES
 from preprocessing import prepare_data_and_anova, generate_folds
 from ablation import create_ablation_matrices
 
+ARTIFACTS_DIR = "artifacts"
 
-# ─────────────────────────────────────────────
-# HELPERS
-# ─────────────────────────────────────────────
 def _build_cat_col_names():
     return [entrance_cols[i] for i in CAT_FEATURE_INDICES]
 
 
 def export_m4_production():
-    print("=" * 60)
-    print("EXPORT — M4 CatBoost Production Model")
-    print("=" * 60)
 
-    # ── Load & preprocess ────────────────────────────────────────
-    print("\n[1/5] Loading data and running preprocessing pipeline …")
+    print("M4 CatBoost Production Model")
+ 
+
+    os.makedirs(ARTIFACTS_DIR, exist_ok=True)
+
+    # Load & preprocess
+    print("\nLoading data and running preprocessing pipeline …")
     df  = pd.read_csv("data/student_data.csv")
     df1 = pd.read_csv("data/major.csv")
 
     df              = prepare_data_and_anova(df)
     processed_folds = generate_folds(df, df1)
 
-    # Use Fold 0 as representative training set
+    
     fold_info = processed_folds[0]
     train_df  = fold_info["train"]
     y_train   = train_df[target_col]
 
-    # ── Export the encoder from Fold 0 ───────────────────────────
-    print("\n[2/5] Exporting OrdinalEncoder categories …")
+    print("\nExporting OrdinalEncoder categories …")
     encoder = fold_info["encoder"]
 
-    # We need the mapping: raw string → encoded integer for each
-    # categorical feature so the UI can replicate what the encoder does.
+
     from config import categorical_features
     encoder_maps = {}
     for feat, cats in zip(categorical_features, encoder.categories_):
         encoder_maps[feat] = {str(cat): int(idx) for idx, cat in enumerate(cats)}
 
-    with open("encoder_maps.json", "w") as fh:
+    with open(os.path.join(ARTIFACTS_DIR, "encoder_maps.json"), "w") as fh:
         json.dump(encoder_maps, fh, indent=2)
-    print("  ✅  Saved encoder_maps.json")
+    print("  Saved encoder_maps.json")
 
-    # ── Export major context lookup table ────────────────────────
-    print("\n[3/5] Building Major context database …")
+    # Export major context lookup table
+    print("\nBuilding Major context database …")
     context_cols = [
         "Major",
-        # distribution context (computed per-fold in preprocessing)
+        # distribution context 
         "mean_score_std", "std_score_std",
         "female_ratio", "mean_scholarship_type",
         "priority_ratio", "mean_lang_score",
         "region_entropy", "admission_entropy", "hs_type_entropy",
-        # curriculum features (merged from major.csv)
+        # curriculum features 
         "CreditsRequired", "CourseRequired", "FirstYearCreditsLoad",
         "MathIntensive", "IsSTEM",
     ]
@@ -74,21 +72,20 @@ def export_m4_production():
         .drop_duplicates(subset=["Major"])
         .reset_index(drop=True)
     )
-    major_context_db.to_csv("major_context_db.csv", index=False)
-    print(f"  ✅  Saved major_context_db.csv  ({len(major_context_db)} majors)")
+    major_context_db.to_csv(os.path.join(ARTIFACTS_DIR, "major_context_db.csv"), index=False)
+    print(f" Saved major_context_db.csv  ({len(major_context_db)} majors)")
 
-    # Also export raw score statistics per major for ScorePercentile
     major_score_stats = (
         train_df.groupby("Major")["EntranceScore_Std"]
         .apply(list)
         .reset_index()
         .rename(columns={"EntranceScore_Std": "scores"})
     )
-    major_score_stats.to_json("major_score_stats.json", orient="records")
-    print("  ✅  Saved major_score_stats.json")
+    major_score_stats.to_json(os.path.join(ARTIFACTS_DIR, "major_score_stats.json"), orient="records")
+    print(" Saved major_score_stats.json")
 
-    # ── Train M4 model ───────────────────────────────────────────
-    print("\n[4/5] Training M4 CatBoost model …")
+   
+    print("\nTraining M4 CatBoost model …")
     cat_col_names = _build_cat_col_names()
     fold_matrices = create_ablation_matrices(train_df, fold_info["test"])
     X_train_m4    = fold_matrices["M4"]["X_train"].copy()
@@ -104,11 +101,10 @@ def export_m4_production():
     ratio  = float(n_grad / n_drop)
     sw     = np.where(y_train == 1, ratio, 1.0)
 
-    # Save M4 feature column order so App.py can reconstruct the right order
     m4_feature_cols = list(X_train_m4.columns)
-    with open("m4_feature_cols.json", "w") as fh:
+    with open(os.path.join(ARTIFACTS_DIR, "m4_feature_cols.json"), "w") as fh:
         json.dump(m4_feature_cols, fh, indent=2)
-    print(f"  ✅  Saved m4_feature_cols.json  ({len(m4_feature_cols)} features)")
+    print(f"Saved m4_feature_cols.json  ({len(m4_feature_cols)} features)")
 
     model = CatBoostClassifier(random_seed=42, verbose=0)
 
@@ -139,17 +135,16 @@ def export_m4_production():
         cat_features=current_cat_indices,
         sample_weight=sw,
     )
-    model.save_model("catboost_m4_model.cbm")
-    print("  ✅  Saved catboost_m4_model.cbm")
+    model.save_model(os.path.join(ARTIFACTS_DIR, "catboost_m4_model.cbm"))
+    print("Saved catboost_m4_model.cbm")
 
-    # ── Compute global distribution stats for score standardisation ─
-    print("\n[5/5] Computing global score stats for UI …")
+    print("\nComputing global score stats for UI")
     global_stats = {}
     for admission in train_df["Admission"].unique():
         mask = train_df["Admission"] == admission
         m    = float(train_df.loc[mask, "EntranceExamScore"].mean())
         s    = float(train_df.loc[mask, "EntranceExamScore"].std())
-        s    = s if s and s != 0 else 1.0
+        s    = s if pd.notnull(s) and s != 0 else 1.0
         global_stats[str(admission)] = {"mean": m, "std": s}
 
     # Fallback global
@@ -158,13 +153,11 @@ def export_m4_production():
         "std":  float(train_df["EntranceExamScore"].std()),
     }
 
-    with open("admission_score_stats.json", "w") as fh:
+    with open(os.path.join(ARTIFACTS_DIR, "admission_score_stats.json"), "w") as fh:
         json.dump(global_stats, fh, indent=2)
-    print("  ✅  Saved admission_score_stats.json")
+    print(" Saved admission_score_stats.json")
+    print("Export complete")
 
-    print("\n" + "=" * 60)
-    print("Export complete!  Run:  streamlit run App.py")
-    print("=" * 60)
 
 
 if __name__ == "__main__":

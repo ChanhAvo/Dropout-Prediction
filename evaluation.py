@@ -25,7 +25,7 @@ def get_corrected_se(scores):
     return np.sqrt(var_raw * nb_correction_factor)
 
 def run_model_selection(processed_folds):
-    print("\nBLOCK 2 — Model Selection Experiment")
+    print("\nModel Selection Experiment")
     print("-" * 60)
 
     cat_col_names = [entrance_cols[i] for i in CAT_FEATURE_INDICES]
@@ -90,7 +90,7 @@ def run_model_selection(processed_folds):
             selection_results[name]['precision'].append(np.mean(inner_precs))
             selection_results[name]['f1'].append(np.mean(inner_f1s))
 
-    print("\nMODEL SELECTION RESULTS (Evaluated purely on Inner Validation)")
+    print("\nMODEL SELECTION RESULTS")
     print("Mean +/- Std over 3 repeats (each repeat = mean of 5 folds)")
     print("=" * 80)
     print(f"{'Model':<22} | {'ROC-AUC':<16} | {'Recall':<16} | {'Precision':<16} | {'F1-Score':<16}")
@@ -114,7 +114,7 @@ def run_model_selection(processed_folds):
 
 def run_nested_cv_ablation(processed_folds):
     print("\n" + "=" * 85)
-    print("BLOCK 2.5 & 3 — NESTED CV TUNING & ABLATION STUDY")
+    print("NESTED CV TUNING & ABLATION STUDY")
     print("=" * 85)
     print("Loading hyperparameters from JSON if available to save compute.\n")
 

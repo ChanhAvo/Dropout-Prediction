@@ -57,7 +57,7 @@ def prepare_data_and_anova(df):
         "Check raw data encoding before proceeding."
     )
     assert df[target_col].isnull().sum() == 0, "Status column contains NaN values."
-    print(f"[OK] Status encoding confirmed: 1=Dropout ({(df[target_col]==1).sum()}), "
+    print(f"Status encoding confirmed: 1=Dropout ({(df[target_col]==1).sum()}), "
           f"0=Graduate ({(df[target_col]==0).sum()})")
     
     return df
@@ -190,5 +190,5 @@ def generate_folds(df, df1):
             'encoder':  fold_encoder
         })
 
-    print(f"\n[OK] Successfully processed {len(processed_folds)} folds.")
+    print(f"\nSuccessfully processed {len(processed_folds)} folds.")
     return processed_folds

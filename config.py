@@ -69,7 +69,7 @@ candidate_models = {
                                     random_seed=42, verbose=0)
 }
 
-# Tuning grids for Block 3
+# Tuning grids 
 tuning_setup = {
     'Random Forest': {
         'base_clf': RandomForestClassifier(random_state=42),
