@@ -143,7 +143,6 @@ Provides a browser-based inference interface:
 git clone https://github.com/\<your\_repo\>/Dropout-Prediction.git  
 cd DropoutPrediction
 
-***Note**: Due to privacy, the dataset will not be published to github, please unzip the [file](https://drive.google.com/file/d/19q2hj4vSlGqjjcZajMIHk9ZjU4lCi0NQ/view?usp=drive_link) to access the dataset*
 
 ### **Step 2: Create a virtual environment**
 
