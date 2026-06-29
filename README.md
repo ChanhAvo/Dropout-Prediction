@@ -5,31 +5,29 @@ A machine learning system that predicts student dropout risk using machine learn
 
 ## **Project Structure**
 
-DropoutPrediction/  
-│  
-├── data/  
-│   ├── student\_data.csv                 
-│   └── major.csv                        
-│  
-├── artifacts/                          
-│   ├── catboost\_m4\_model.cbm            
-│   ├── encoder\_maps.json                
-│   ├── m4\_feature\_cols.json             
-│   ├── major\_context\_db.csv             
-│   ├── major\_score\_stats.json          
-│   └── admission\_score\_stats.json       
-│  
-├── ablation.py                         
-├── app.py                               
-├── config.py                            
-├── evaluation.py                        
-├── export.py                           
-├── main.py                              
-├── preprocessing.py                    
-├── shap\_analysis.py                     
-│  
-├── tuned\_hyperparameters.json           
-└── requirements.txt                   
+```
+DropoutPrediction/
+├── data/
+│   ├── student_data.csv
+│   └── major.csv
+├── artifacts/
+│   ├── catboost_m4_model.cbm
+│   ├── encoder_maps.json
+│   ├── m4_feature_cols.json
+│   ├── major_context_db.csv
+│   ├── major_score_stats.json
+│   └── admission_score_stats.json
+├── ablation.py
+├── app.py
+├── config.py
+├── evaluation.py
+├── export.py
+├── main.py
+├── preprocessing.py
+├── shap_analysis.py
+├── tuned_hyperparameters.json
+└── requirements.txt
+```                
 
 ## **File Descriptions**
 
@@ -202,6 +200,11 @@ This retrains CatBoost M4 using the best hyperparameters from the cache and save
 #### **Step 3: Launch the web application**
 
 streamlit run app.py
+
+## **Demo**
+
+https://github.com/user-attachments/assets/a8b5f725-7b8c-444b-8e77-4c1d2dbf86b2
+
 
 ## **Troubleshooting**
 
