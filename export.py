@@ -1,8 +1,3 @@
-"""
-Export.py — Production export script for Student Dropout Predictor
-Trains the final CatBoost M4 model and saves all artefacts needed by App.py
-"""
-
 import os
 import json
 import ast
